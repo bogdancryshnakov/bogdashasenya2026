@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>КОНЦЕРТЫ В СТОЛИЦАХ — Богдаша крыш × thurinay × pulsee</title>
+<meta name="description" content="КОНЦЕРТЫ В СТОЛИЦАХ — совместные концерты Богдаши крыш, thurinay и pulsee.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&family=Space+Mono:wght@400;700&display=swap');
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#070707;color:#f5f5f5;font-family:Inter,Arial,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.09;background-image:radial-gradient(#fff .7px,transparent .7px);background-size:5px 5px;z-index:20}
+a{color:inherit;text-decoration:none}.wrap{max-width:1280px;margin:auto;padding:0 28px}
+nav{position:fixed;top:0;left:0;right:0;z-index:30;display:flex;justify-content:space-between;align-items:center;padding:20px 28px;mix-blend-mode:difference}
+.logo{font-weight:900;letter-spacing:-.05em;font-size:18px}.navlinks{display:flex;gap:28px;font-family:"Space Mono";font-size:11px;text-transform:uppercase}
+.hero{min-height:100svh;display:flex;align-items:flex-end;padding:120px 0 55px;position:relative;overflow:hidden}
+.hero .noise{position:absolute;inset:0;background:linear-gradient(115deg,transparent 35%,rgba(255,255,255,.08) 35.2%,transparent 35.5%),linear-gradient(70deg,transparent 60%,rgba(255,255,255,.05) 60.2%,transparent 60.4%);transform:skewY(-4deg);animation:shift 7s infinite alternate}
+@keyframes shift{from{transform:translateX(-4%) skewY(-4deg)}to{transform:translateX(4%) skewY(-4deg)}}
+.kicker{font-family:"Space Mono";font-size:12px;margin-bottom:18px}.hero h1{font-size:clamp(65px,12vw,180px);line-height:.78;letter-spacing:-.085em;margin:0;max-width:1100px;text-transform:uppercase}
+.hero h1 span{display:block}.hero h1 .outline{-webkit-text-stroke:1px #fff;color:transparent}.hero-bottom{display:flex;justify-content:space-between;align-items:flex-end;margin-top:60px;gap:30px}
+.hero-copy{max-width:500px;font-size:15px;line-height:1.45}.cta{display:inline-flex;align-items:center;gap:12px;border:1px solid #fff;padding:15px 20px;font-family:"Space Mono";font-size:12px;text-transform:uppercase;transition:.2s}.cta:hover{background:#fff;color:#000}
+section{padding:120px 0;border-top:1px solid #242424}.section-title{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:55px}.section-title h2{font-size:clamp(40px,7vw,90px);letter-spacing:-.07em;line-height:.85;margin:0;text-transform:uppercase}.mono{font-family:"Space Mono";font-size:11px;color:#aaa}
+.events{display:grid;gap:1px;background:#292929;border:1px solid #292929}.event{background:#070707;display:grid;grid-template-columns:150px 1fr 220px 150px;align-items:center;padding:28px 25px;min-height:105px;transition:.25s}.event:hover{background:#fff;color:#000}.date{font-family:"Space Mono";font-size:12px}.city{font-size:clamp(27px,4vw,55px);font-weight:900;letter-spacing:-.06em;text-transform:uppercase}.venue{font-family:"Space Mono";font-size:11px;text-transform:uppercase}.buy{text-align:right}.buy button{border:1px solid currentColor;background:transparent;color:inherit;padding:12px 16px;font-family:"Space Mono";font-size:10px;cursor:pointer}
+.marquee{overflow:hidden;border-top:1px solid #222;border-bottom:1px solid #222;padding:18px 0;white-space:nowrap}.track{display:inline-block;font-size:50px;font-weight:900;letter-spacing:-.05em;animation:marquee 18s linear infinite}.track span{padding:0 28px}.track .dim{opacity:.25}@keyframes marquee{to{transform:translateX(-50%)}}
+.artists{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#292929}.artist{background:#070707;min-height:420px;padding:30px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}.artist:nth-child(2){background:#111}.artist .num{font-family:"Space Mono";font-size:11px}.artist h3{font-size:clamp(38px,5vw,76px);line-height:.82;letter-spacing:-.08em;margin:0;text-transform:uppercase}.artist p{font-family:"Space Mono";font-size:10px;max-width:260px;line-height:1.5;color:#aaa}.circle{position:absolute;width:260px;height:260px;border:1px solid #555;border-radius:50%;right:-80px;top:80px}.circle:after{content:"";position:absolute;inset:35px;border:1px solid #333;border-radius:50%}
+.info{display:grid;grid-template-columns:1fr 1fr;gap:80px}.info h3{font-size:30px;letter-spacing:-.05em;margin-top:0}.info p{color:#aaa;line-height:1.7;max-width:560px}.faq{border-top:1px solid #333}.faq details{border-bottom:1px solid #333;padding:20px 0}.faq summary{cursor:pointer;font-size:18px;font-weight:700}.faq p{color:#aaa;line-height:1.6;max-width:700px}
+footer{padding:60px 0 35px;border-top:1px solid #242424}.foot{display:flex;justify-content:space-between;gap:20px;font-family:"Space Mono";font-size:10px;color:#aaa}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.85);backdrop-filter:blur(10px);display:none;align-items:center;justify-content:center;z-index:50;padding:20px}.modal.open{display:flex}.box{background:#f5f5f5;color:#000;max-width:620px;width:100%;padding:34px}.box h3{font-size:45px;letter-spacing:-.07em;margin:0 0 8px}.box p{font-family:"Space Mono";font-size:11px}.close{float:right;background:none;border:0;font-size:28px;cursor:pointer}.form{display:grid;gap:10px;margin-top:25px}.form input,.form button{font:inherit;padding:15px;border:1px solid #aaa;background:#fff}.form button{background:#000;color:#fff;border-color:#000;cursor:pointer}
+@media(max-width:800px){.navlinks{display:none}.wrap{padding:0 17px}.hero{padding-bottom:35px}.hero-bottom{display:block}.hero-copy{margin-bottom:25px}.event{grid-template-columns:90px 1fr;gap:10px}.venue{grid-column:2}.buy{grid-column:2;text-align:left}.artists{grid-template-columns:1fr}.artist{min-height:330px}.info{grid-template-columns:1fr;gap:45px}.section-title{display:block}.section-title .mono{display:block;margin-top:15px}.track{font-size:34px}}
+</style>
+</head>
+<body>
+<nav><div class="logo">КВСТЛЦХ</div><div class="navlinks"><a href="#dates">даты</a><a href="#artists">артисты</a><a href="#info">инфо</a><a href="#tickets">билеты</a></div></nav>
+
+<header class="hero">
+<div class="noise"></div>
+<div class="wrap" style="width:100%;position:relative">
+<div class="kicker">2026 / LIVE TOUR / 02 ARTISTS</div>
+<h1><span>КОНЦЕРТЫ</span><span class="outline">В СТОЛИЦАХ</span></h1>
+<div class="hero-bottom">
+<div class="hero-copy">thurinay (богдаша крыш) и Pulsee собираются вместе, чтобы проехать по главным городам. Один тур. Два артиста. Никаких повторов.</div>
+<a class="cta" href="#dates">смотреть даты →</a>
+</div>
+</div>
+</header>
+
+<div class="marquee"><div class="track"><span>БOГДАША КРЫШ</span><span class="dim">×</span><span>THURINAY</span><span class="dim">×</span><span>PULSEE</span><span class="dim">×</span><span>КОНЦЕРТЫ В СТОЛИЦАХ</span><span class="dim">×</span><span>БOГДАША КРЫШ</span><span class="dim">×</span><span>THURINAY</span><span class="dim">×</span><span>PULSEE</span></div></div>
+
+<main>
+<section id="dates"><div class="wrap">
+<div class="section-title"><h2>ДАТЫ</h2><div class="mono">LIVE / 2026</div></div>
+<div class="events">
+<div class="event"><div class="date">05.09.26</div><div class="city">Москва</div><div class="venue">VK Музыка Летом</div>
+    <!-- ИСПРАВЛЕНО: теперь кнопка ведет на реальную страницу билетов -->
+    <div class="buy"><a href="https://qtickets.ru/event/251547" target="_blank" rel="noopener noreferrer"><button>БИЛЕТЫ ↗</button></a></div>
+</div>
+<div class="event"><div class="date">TBA</div><div class="city">Санкт-Петербург</div><div class="venue">TBA</div>
+    <!-- Кнопка для СПб пока оставлена с модалкой, т.к. билетов нет -->
+    <div class="buy"><button onclick="openTicket('Санкт-Петербург — TBA')">БИЛЕТЫ ↗</button></div>
+</div>
+</div>
+<p class="mono" style="margin-top:18px">* Даты и площадки можно заменить в одном месте прямо в коде.</p>
+</div></section>
+
+<section id="artists"><div class="wrap">
+<div class="section-title"><h2>LINEUP</h2><div class="mono">02 ARTISTS / 01 STAGE</div></div>
+<div class="artists">
+<div class="artist"><div class="num">001 / LIVE</div><div class="circle"></div><div><h3>thurinay</h3><p>богдаша крыш / live performance</p></div></div>
+<div class="artist"><div class="num">002 / LIVE</div><div class="circle"></div><div><h3>Pulsee</h3><p>live performance</p></div></div>
+</div>
+</div></section>
+
+<section id="info"><div class="wrap">
+<div class="section-title"><h2>О ТУРЕ</h2><div class="mono">NO PHONES. JUST SOUND.</div></div>
+<div class="info">
+<div><h3>Это не просто концерт.</h3><p>«КОНЦЕРТЫ В СТОЛИЦАХ» — это совместный выезд двух артистов в одну большую сцену. Два разных звучания, один вечер и город, который на несколько часов становится частью шоу.</p></div>
+<div><h3>Что будет?</h3><p>Полноценные live-сеты, совместные исполнения, треки, которые вы знаете, и материал, который услышите впервые. Состав и программа могут отличаться от города к городу.</p></div>
+</div>
+<div class="faq" style="margin-top:70px">
+<details><summary>Когда открываются двери?</summary><p>Время открытия дверей и начала шоу указывается на странице конкретного билета.</p></details>
+<details><summary>Будут ли совместные треки?</summary><p>Да. Совместные исполнения — одна из главных частей программы.</p></details>
+<details><summary>Можно ли вернуть билет?</summary><p>Условия возврата зависят от билетного оператора и конкретной площадки.</p></details>
+</div>
+</div></section>
+
+<section id="tickets"><div class="wrap" style="text-align:center">
+<div class="mono">ТЫ ЕДЕШЬ?</div><h2 style="font-size:clamp(55px,11vw,150px);line-height:.8;letter-spacing:-.09em;margin:30px 0 45px">УВИДИМСЯ<br><span class="outline">В СТОЛИЦЕ.</span></h2>
+<a class="cta" href="#dates">ВЫБРАТЬ ГОРОД →</a>
+</div></section>
+</main>
+
+<footer><div class="wrap foot"><div>© 2026 КОНЦЕРТЫ В СТОЛИЦАХ</div><div>THURINAY (БOГДАША КРЫШ) × PULSEE</div><div>12+</div></div></footer>
+
+<!-- Модальное окно оставлено для СПб и как запасной вариант -->
+<div class="modal" id="modal"><div class="box"><button class="close" onclick="closeTicket()">×</button><div class="mono">БИЛЕТЫ</div><h3 id="ticketCity">МОСКВА</h3><p>Оставь заявку — здесь можно подключить реальную билетную систему или Telegram-бота.</p><form class="form" onsubmit="submitForm(event)"><input id="name" placeholder="Имя" required><input id="email" type="email" placeholder="E-mail" required><button>ПРОДОЛЖИТЬ →</button></form></div></div>
+<script>
+function openTicket(city){document.getElementById('ticketCity').textContent=city.toUpperCase();document.getElementById('modal').classList.add('open')}
+function closeTicket(){document.getElementById('modal').classList.remove('open')}
+document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='modal')closeTicket()})
+function submitForm(e){e.preventDefault();alert('Заявка сохранена. Подключите обработчик формы для реальной продажи билетов.');closeTicket()}
+</script>
+</body>
+</html>
