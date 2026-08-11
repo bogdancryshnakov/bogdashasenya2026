@@ -90,12 +90,12 @@ footer{padding:60px 0 35px;border-top:1px solid #242424}.foot{display:flex;justi
 <footer><div class="wrap foot"><div>© 2026 КОНЦЕРТЫ В СТОЛИЦАХ</div><div>THURINAY (БOГДАША КРЫШ) × PULSEE</div><div>12+</div></div>design by thurinay</div></div></div></div></footer>
 
 <!-- Модальное окно оставлено для СПб и как запасной вариант -->
-<div class="modal" id="modal"><div class="box"><button class="close" onclick="closeTicket()">×</button><div class="mono">БИЛЕТЫ</div><h3 id="ticketCity">МОСКВА</h3><p>Оставь заявку — здесь можно подключить реальную билетную систему или Telegram-бота.</p><form class="form" onsubmit="submitForm(event)"><input id="name" placeholder="Имя" required><input id="email" type="email" placeholder="E-mail" required><button>ПРОДОЛЖИТЬ →</button></form></div></div>
+<div class="modal" id="modal"><div class="box"><button class="close" onclick="closeTicket()">×</button><div class="mono">БИЛЕТЫ</div><h3 id="ticketCity">МОСКВА</h3><p>Именно здесь можно забронировать билет, на твою почту придет ссылка для покупки самого дешёвого билета.</p><form class="form" onsubmit="submitForm(event)"><input id="name" placeholder="Имя" required><input id="email" type="email" placeholder="E-mail" required><button>ПРОДОЛЖИТЬ →</button></form></div></div>
 <script>
 function openTicket(city){document.getElementById('ticketCity').textContent=city.toUpperCase();document.getElementById('modal').classList.add('open')}
 function closeTicket(){document.getElementById('modal').classList.remove('open')}
 document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='modal')closeTicket()})
-function submitForm(e){e.preventDefault();alert('Заявка сохранена. Подключите обработчик формы для реальной продажи билетов.');closeTicket()}
+function submitForm(e){e.preventDefault();alert('Заявка сохранена. Ждите открытия билетов!');closeTicket()}
 </script>
 </body>
 </html>
