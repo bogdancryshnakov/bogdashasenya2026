@@ -19,13 +19,13 @@ nav{position:fixed;top:0;left:0;right:0;z-index:30;display:flex;justify-content:
 .hero h1 span{display:block}.hero h1 .outline{-webkit-text-stroke:1px #fff;color:transparent}.hero-bottom{display:flex;justify-content:space-between;align-items:flex-end;margin-top:60px;gap:30px}
 .hero-copy{max-width:500px;font-size:15px;line-height:1.45}.cta{display:inline-flex;align-items:center;gap:12px;border:1px solid #fff;padding:15px 20px;font-family:"Space Mono";font-size:12px;text-transform:uppercase;transition:.2s}.cta:hover{background:#fff;color:#000}
 section{padding:120px 0;border-top:1px solid #242424}.section-title{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:55px}.section-title h2{font-size:clamp(40px,7vw,90px);letter-spacing:-.07em;line-height:.85;margin:0;text-transform:uppercase}.mono{font-family:"Space Mono";font-size:11px;color:#aaa}
-.events{display:grid;gap:1px;background:#292929;border:1px solid #292929}.event{background:#070707;display:grid;grid-template-columns:150px 1fr 220px 150px;align-items:center;padding:28px 25px;min-height:105px;transition:.25s}.event:hover{background:#fff;color:#000}.date{font-family:"Space Mono";font-size:12px}.city{font-size:clamp(27px,4vw,55px);font-weight:900;letter-spacing:-.06em;text-transform:uppercase}.venue{font-family:"Space Mono";font-size:11px;text-transform:uppercase}.buy{text-align:right}.buy button{border:1px solid currentColor;background:transparent;color:inherit;padding:12px 16px;font-family:"Space Mono";font-size:10px;cursor:pointer}
+.events{display:grid;gap:1px;background:#292929;border:1px solid #292929}.event{background:#070707;display:grid;grid-template-columns:150px 1fr 220px 150px;align-items:center;padding:28px 25px;min-height:105px;transition:.25s}.event:hover{background:#fff;color:#000}.date{font-family:"Space Mono";font-size:12px}.city{font-size:clamp(27px,4vw,55px);font-weight:900;letter-spacing:-.06em;text-transform:uppercase}.venue{font-family:"Space Mono";font-size:11px;text-transform:uppercase}.buy{text-align:right}.buy button{border:1px solid currentColor;background:transparent;color:inherit;padding:12px 16px;font-family:"Space Mono";font-size:10px;cursor:pointer}.buy a button{width:100%}
 .marquee{overflow:hidden;border-top:1px solid #222;border-bottom:1px solid #222;padding:18px 0;white-space:nowrap}.track{display:inline-block;font-size:50px;font-weight:900;letter-spacing:-.05em;animation:marquee 18s linear infinite}.track span{padding:0 28px}.track .dim{opacity:.25}@keyframes marquee{to{transform:translateX(-50%)}}
 .artists{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#292929}.artist{background:#070707;min-height:420px;padding:30px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}.artist:nth-child(2){background:#111}.artist .num{font-family:"Space Mono";font-size:11px}.artist h3{font-size:clamp(38px,5vw,76px);line-height:.82;letter-spacing:-.08em;margin:0;text-transform:uppercase}.artist p{font-family:"Space Mono";font-size:10px;max-width:260px;line-height:1.5;color:#aaa}.circle{position:absolute;width:260px;height:260px;border:1px solid #555;border-radius:50%;right:-80px;top:80px}.circle:after{content:"";position:absolute;inset:35px;border:1px solid #333;border-radius:50%}
-.info{display:grid;grid-template-columns:1fr 1fr;gap:80px}.info h3{font-size:30px;letter-spacing:-.05em;margin-top:0}.info p{color:#aaa;line-height:1.7;max-width:560px}.faq{border-top:1px solid #333}.faq details{border-bottom:1px solid #333;padding:20px 0}.faq summary{cursor:pointer;font-size:18px;font-weight:700}.faq p{color:#aaa;line-height:1.6;max-width:700px}
-footer{padding:60px 0 35px;border-top:1px solid #242424}.foot{display:flex;justify-content:space-between;gap:20px;font-family:"Space Mono";font-size:10px;color:#aaa}
+.info{display:grid;grid-template-columns:1fr 1fr;gap:80px}.info h3{font-size:30px;letter-spacing:-.05em;margin-top:0}.info p{color:#aaa;line-height:1.7;max-width:560px}.faq{border-top:1px solid #333;margin-top:70px}.faq details{border-bottom:1px solid #333;padding:24px 0}.faq summary{cursor:pointer;font-size:18px;font-weight:700;list-style:none;display:flex;justify-content:space-between;align-items:center}.faq summary::-webkit-details-marker{display:none}.faq summary:after{content:"+";font-size:24px;font-weight:300;transition:.2s}.faq details[open] summary:after{content:"−"}.faq p{color:#aaa;line-height:1.7;max-width:820px;margin:18px 0 6px;font-size:15px}
+footer{padding:60px 0 35px;border-top:1px solid #242424}.foot{display:flex;justify-content:space-between;gap:20px;font-family:"Space Mono";font-size:10px;color:#aaa;flex-wrap:wrap}
 .modal{position:fixed;inset:0;background:rgba(0,0,0,.85);backdrop-filter:blur(10px);display:none;align-items:center;justify-content:center;z-index:50;padding:20px}.modal.open{display:flex}.box{background:#f5f5f5;color:#000;max-width:620px;width:100%;padding:34px}.box h3{font-size:45px;letter-spacing:-.07em;margin:0 0 8px}.box p{font-family:"Space Mono";font-size:11px}.close{float:right;background:none;border:0;font-size:28px;cursor:pointer}.form{display:grid;gap:10px;margin-top:25px}.form input,.form button{font:inherit;padding:15px;border:1px solid #aaa;background:#fff}.form button{background:#000;color:#fff;border-color:#000;cursor:pointer}
-@media(max-width:800px){.navlinks{display:none}.wrap{padding:0 17px}.hero{padding-bottom:35px}.hero-bottom{display:block}.hero-copy{margin-bottom:25px}.event{grid-template-columns:90px 1fr;gap:10px}.venue{grid-column:2}.buy{grid-column:2;text-align:left}.artists{grid-template-columns:1fr}.artist{min-height:330px}.info{grid-template-columns:1fr;gap:45px}.section-title{display:block}.section-title .mono{display:block;margin-top:15px}.track{font-size:34px}}
+@media(max-width:800px){.navlinks{display:none}.wrap{padding:0 17px}.hero{padding-bottom:35px}.hero-bottom{display:block}.hero-copy{margin-bottom:25px}.event{grid-template-columns:90px 1fr;gap:10px}.venue{grid-column:2}.buy{grid-column:2;text-align:left}.artists{grid-template-columns:1fr}.artist{min-height:330px}.info{grid-template-columns:1fr;gap:45px}.section-title{display:block}.section-title .mono{display:block;margin-top:15px}.track{font-size:34px}.faq summary{font-size:16px}}
 </style>
 </head>
 <body>
@@ -37,8 +37,7 @@ footer{padding:60px 0 35px;border-top:1px solid #242424}.foot{display:flex;justi
 <div class="kicker">2026 / LIVE TOUR / 02 ARTISTS</div>
 <h1><span>КОНЦЕРТЫ</span><span class="outline">В СТОЛИЦАХ</span></h1>
 <div class="hero-bottom">
-<div class="hero-copy">thurinay (богдаша крыш) и Pulsee осенью дают столичный тур! Быть или не быть решать вам, но позвать вас нам надо! Поэтому, приходите на наши концерты осенью, чтобы было очень весело! 
-Исполним старые хиты, новые и конечно же Богдаша/Сеня!</div>
+<div class="hero-copy">thurinay (богдаша крыш) и Pulsee собираются вместе, чтобы проехать по главным городам. Один тур. Два артиста. Никаких повторов.</div>
 <a class="cta" href="#dates">смотреть даты →</a>
 </div>
 </div>
@@ -50,15 +49,14 @@ footer{padding:60px 0 35px;border-top:1px solid #242424}.foot{display:flex;justi
 <section id="dates"><div class="wrap">
 <div class="section-title"><h2>ДАТЫ</h2><div class="mono">LIVE / 2026</div></div>
 <div class="events">
-<div class="event"><div class="date">05.09.26</div><div class="city">Москва</div><div class="venue">VK Музыка Летом</div>
-    <!-- ИСПРАВЛЕНО: теперь кнопка ведет на реальную страницу билетов -->
+<div class="event"><div class="date">05.09.26</div><div class="city">Москва</div><div class="venue">Atmosphere</div>
     <div class="buy"><a href="https://qtickets.ru/event/251547" target="_blank" rel="noopener noreferrer"><button>БИЛЕТЫ ↗</button></a></div>
 </div>
 <div class="event"><div class="date">TBA</div><div class="city">Санкт-Петербург</div><div class="venue">TBA</div>
-    <!-- Кнопка для СПб пока оставлена с модалкой, т.к. билетов нет -->
     <div class="buy"><button onclick="openTicket('Санкт-Петербург — TBA')">БИЛЕТЫ ↗</button></div>
 </div>
 </div>
+</div></section>
 
 <section id="artists"><div class="wrap">
 <div class="section-title"><h2>LINEUP</h2><div class="mono">02 ARTISTS / 01 STAGE</div></div>
@@ -71,13 +69,64 @@ footer{padding:60px 0 35px;border-top:1px solid #242424}.foot{display:flex;justi
 <section id="info"><div class="wrap">
 <div class="section-title"><h2>О ТУРЕ</h2><div class="mono">NO PHONES. JUST SOUND.</div></div>
 <div class="info">
-<div><h3>Это не просто концерт.</h3><p>«КОНЦЕРТЫ В СТОЛИЦАХ» — это совместное выступление двух артистов на одной большой сцене в МСК и СПб. Два разных звучания, один вечер и город, который на несколько часов становится частью шоу.</p></div>
-<div><h3>Что будет?</h3><p>Полноценные live-сеты, совместные исполнения, треки, которые вы знаете, и материал, который услышите впервые. Состав и программа могут отличаться от города к городу.</p></div>
+    <!-- ИСПРАВЛЕНО: обновлен текст описания тура -->
+    <div><h3>Это не просто концерт.</h3><p>«КОНЦЕРТЫ В СТОЛИЦАХ» — это совместное выступление двух артистов на одной большой сцене в МСК и СПб. Два разных звучания, один вечер и город, который на несколько часов становится частью шоу.</p></div>
+    <div><h3>Что будет?</h3><p>Полноценные live-сеты, совместные исполнения, треки, которые вы знаете, и материал, который услышите впервые. Состав и программа могут отличаться от города к городу.</p></div>
 </div>
-<div class="faq" style="margin-top:70px">
-<details><summary>Когда открываются двери?</summary><p>Время открытия дверей и начала шоу указывается на странице конкретного билета.</p></details>
-<details><summary>Будут ли совместные треки?</summary><p>Да. Совместные исполнения — одна из главных частей программы.</p></details>
-<details><summary>Можно ли вернуть билет?</summary><p>Условия возврата зависят от билетного оператора и конкретной площадки.</p></details>
+
+<div class="faq">
+<details>
+    <summary>ГДЕ ПРОЙДЕТ КОНЦЕРТ И СКОЛЬКО ПРОДЛИТСЯ?</summary>
+    <p><strong>Адрес:</strong> Москва, Шмитовский проезд, 32А, стр. 1 (клуб «Atmosphere»), метро «Шелепиха».<br>
+    <strong>Начало:</strong> ориентировочно 19:00.<br>
+    <strong>Окончание:</strong> до 22:00.</p>
+</details>
+
+<details>
+    <summary>ГДЕ ПРИОБРЕСТИ БИЛЕТЫ?</summary>
+    <p>Прямо на этом сайте, в разделе <a href="#dates" style="color:#fff;text-decoration:underline;">«ДАТЫ»</a>. Выберите нужный город и нажмите кнопку «БИЛЕТЫ».</p>
+</details>
+
+<details>
+    <summary>ВОЗРАСТНОЕ ОГРАНИЧЕНИЕ И ДОКУМЕНТЫ</summary>
+    <p><strong>Строго 12+.</strong><br>
+    • Если вам <strong>меньше 12 лет</strong>, проход только с сопровождающим (мама, папа или нотариально заверенный опекун). У сопровождающего должен быть свой билет, паспорт и ваше свидетельство о рождении. Ни старший брат, ни друг не подойдут. Сопровождающий обязан находиться на площадке всё мероприятие.<br>
+    • Если вам <strong>12 лет или больше</strong>, вы можете прийти один, но при себе обязательно иметь оригинал документа, удостоверяющего личность.</p>
+</details>
+
+<details>
+    <summary>СПИСОК ДОКУМЕНТОВ ДЛЯ ВХОДА</summary>
+    <p><strong>Только оригиналы!</strong> Копии, фото и «Госуслуги» не принимаются. Согласно приказу Минкультуры России, действительны:<br>
+    – Паспорт гражданина РФ;<br>
+    – Загранпаспорт гражданина РФ;<br>
+    – Временное удостоверение личности;<br>
+    – Военный билет или удостоверение личности военнослужащего;<br>
+    – Паспорт иностранного гражданина;<br>
+    – Вид на жительство, разрешение на временное проживание;<br>
+    – Удостоверение беженца или свидетельство о временном убежище;<br>
+    – <strong>Свидетельство о рождении</strong> (для граждан РФ до 14 лет).<br><br>
+    <em>Водительские права больше не являются документом, удостоверяющим личность. Без оригинала вас не пустят, а деньги за билет не вернут.</em></p>
+</details>
+
+<details>
+    <summary>ЧТО ЗНАЧИТ БИЛЕТ «БЕЗ ПРОХОДА»?</summary>
+    <p>Билеты категории «MEET & GREET» и выше являются дополнительной опцией и <strong>не дают право на вход</strong>. Для прохода на концерт необходимо иметь билет категории «Танцпол», «FAN» или «VIP».</p>
+</details>
+
+<details>
+    <summary>БУДУТ ЛИ СПЕЦИАЛЬНЫЕ ГОСТИ И МЕРЧ?</summary>
+    <p>Вся подробная информация появится в официальных соцсетях и на этом сайте ближе к дате мероприятия. Следите за обновлениями!</p>
+</details>
+
+<details>
+    <summary>БУДЕТ ЛИ ТРЕК-ЛИСТ КОНЦЕРТА?</summary>
+    <p><strong>Нет.</strong> Трек-лист составляет артист непосредственно перед выступлением и держится в секрете, чтобы сохранить интригу. Это сюрприз для всех зрителей.</p>
+</details>
+
+<details>
+    <summary>НУЖНО ЛИ РАСПЕЧАТЫВАТЬ ЭЛЕКТРОННЫЙ БИЛЕТ?</summary>
+    <p>Не обязательно, но можно. Достаточно показать .pdf-файл билета с экрана телефона или другого устройства.</p>
+</details>
 </div>
 </div></section>
 
@@ -87,15 +136,20 @@ footer{padding:60px 0 35px;border-top:1px solid #242424}.foot{display:flex;justi
 </div></section>
 </main>
 
-<footer><div class="wrap foot"><div>© 2026 КОНЦЕРТЫ В СТОЛИЦАХ</div><div>THURINAY (БOГДАША КРЫШ) × PULSEE</div><div>12+</div></div>design by thurinay</div></div></div></div></footer>
+<footer><div class="wrap foot">
+    <div>© 2026 КОНЦЕРТЫ В СТОЛИЦАХ</div>
+    <div>design by thurinay</div>
+    <div>THURINAY (БOГДАША КРЫШ) × PULSEE</div>
+    <div>12+</div>
+</div></footer>
 
-<!-- Модальное окно оставлено для СПб и как запасной вариант -->
-<div class="modal" id="modal"><div class="box"><button class="close" onclick="closeTicket()">×</button><div class="mono">БИЛЕТЫ</div><h3 id="ticketCity">МОСКВА</h3><p>Именно здесь можно забронировать билет, на твою почту придет ссылка для покупки самого дешёвого билета.</p><form class="form" onsubmit="submitForm(event)"><input id="name" placeholder="Имя" required><input id="email" type="email" placeholder="E-mail" required><button>ПРОДОЛЖИТЬ →</button></form></div></div>
+<!-- ИСПРАВЛЕНО: обновлен текст модального окна для СПб -->
+<div class="modal" id="modal"><div class="box"><button class="close" onclick="closeTicket()">×</button><div class="mono">БИЛЕТЫ</div><h3 id="ticketCity">САНКТ-ПЕТЕРБУРГ — TBA</h3><p>Именно здесь можно забронировать билет, на твою почту придет ссылка для покупки самого дешёвого билета.</p><form class="form" onsubmit="submitForm(event)"><input id="name" placeholder="Имя" required><input id="email" type="email" placeholder="E-mail" required><button>ЗАБРОНИРОВАТЬ →</button></form></div></div>
 <script>
 function openTicket(city){document.getElementById('ticketCity').textContent=city.toUpperCase();document.getElementById('modal').classList.add('open')}
 function closeTicket(){document.getElementById('modal').classList.remove('open')}
 document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='modal')closeTicket()})
-function submitForm(e){e.preventDefault();alert('Заявка сохранена. Ждите открытия билетов!');closeTicket()}
+function submitForm(e){e.preventDefault();alert('Бронирование сохранено. Ссылка на покупку самого дешёвого билета придет на вашу почту.');closeTicket()}
 </script>
 </body>
 </html>
